@@ -1,7 +1,12 @@
 # HAND
 Create a large scale (possibly) global HAND raster. 
 The repository contains a script to create the HAND 
-index. 
+index a .yml file to build a suitable conda environment to run the script. 
+
+NOTE: The current version of Pysheds (i.e. one of the packages used in the processing chain)
+has some bugs which need to be fixes as described here : https://github.com/mdbartos/pysheds/pull/268. 
+Chiefely, the "pgrid.py", "sgrid.py", "sview.py" scipts need to be replaced in the conda intallation of the package.
+
 
 The script requires as an data inputs: 
 1. a DEM (possibly a DTM).
